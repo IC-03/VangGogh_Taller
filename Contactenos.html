@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+</head>
+<body>
+    <p> | <a href="index.html"> Inicio</a> | 
+         <a href="Login.html"> Login </a> |
+         <a href="Quienes_somos.html"> Quienes_somos </a>|
+         <a href="Contactenos.html"> Contactenos </a> |
+    </p>
+
+    <p>Dudas, quejas, sugerencias, reclamos y regalos pueden ser enviados por aquí.</p>
+    <p>No se garantiza respuestas inmediatas...</p>
+
+    <!-- Para dar la sensación de que se mandó un mensaje simplemente la redirigí a la misma página jaja-->
+    <form action="Contactenos.html" method="get"> <!--En el futuro sería post?-->
+
+        <label for="#Email del remitente"> Email </label>
+        <input type="text" id="correo" name="email" placeholder="Ejemplo: aloha@gmail.com">
+        <br>
+        <label for="#Asunto del correo"> Asunto </label>
+        <input type="text" id="Asunto" name="Asunto_correo" placeholder="Ejemplo: Aloha">
+        <br>
+        <label for="#Mensaje"> Mensaje </label>
+        <br>
+
+        <textarea name="comentarios" rows="10" cols="40" placeholder="Escribe tu mensajito"></textarea>
+        <br>
+        <button id="button_1" class="btn" onclick="alert('Enviado de manera exitosa');">Enviar</button>
+        
+
+    </form>
+</body>
+</html>
